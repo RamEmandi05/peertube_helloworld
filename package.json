@@ -35,6 +35,10 @@
     "fr-FR": "./languages/fr.json"
   },
   "devDependencies": {
+    "@peertube/peertube-types": "^5.0.1",
     "esbuild": "^0.14.36"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
