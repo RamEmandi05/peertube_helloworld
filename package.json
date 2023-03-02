@@ -26,7 +26,9 @@
   "library": "./main.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",                                                                                                                                                                              
+    "pl:install": "cd ../../PeerTube && npm run plugin:uninstall -- --npm-name peertube-plugin-quickstart && npm run plugin:install -- --plugin-path /Users/kalya/OneDrive/Desktop/tsn_plugin/peertube-plugin-mysupername"
+
   },
   "staticDirs": {
     "images": "public/images"
@@ -35,10 +37,6 @@
     "fr-FR": "./languages/fr.json"
   },
   "devDependencies": {
-    "@peertube/peertube-types": "^5.0.1",
     "esbuild": "^0.14.36"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
   }
 }
